@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sign Up</title>
+    <link rel="icon" href="images/logo-sm.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/signup.css" />
     <link
       rel="stylesheet"
@@ -26,9 +27,9 @@
         <div class="form-group-name gap-3">
           <div class="fname">
             <label for="fname" aria-required="true"
-              ><i class="fa-solid fa-user-large" style="color: #4caf50"></i>
-              First Name</label
-            >
+              ><i class="fa-solid fa-user-large" style="color: #92e3a9"></i>
+              First Name <span class="required-sign">*</span>
+            </label>
             <input type="text" id="fname" name="fname" />
             <!-- fname-error -->
             <p class="fname-error error">First name is required!</p>
@@ -36,8 +37,8 @@
 
           <div class="lname">
             <label for="lname" aria-required="true"
-              ><i class="fa-solid fa-user-large" style="color: #4caf50"></i>
-              Last Name</label
+              ><i class="fa-solid fa-user-large" style="color: #92e3a9"></i>
+              Last Name <span class="required-sign">*</span></label
             >
             <input type="text" id="lname" name="lname" />
             <!-- lname-error -->
@@ -47,19 +48,19 @@
 
         <div class="form-group">
           <label for="email" aria-required="true"
-            ><i class="fa-solid fa-envelope" style="color: #4caf50"></i>
-            Email</label
+            ><i class="fa-solid fa-envelope" style="color: #92e3a9"></i> Email
+            <span class="required-sign">*</span></label
           >
           <input type="email" id="email" name="email" />
           <!-- email-error -->
-          <p class="email-error error">Email is required!</p>
+          <p class="email-error error">Please enter a valid email!</p>
         </div>
 
         <div class="form-group-pass gap-3">
           <div class="pass">
             <label for="password" aria-required="true"
-              ><i class="fa-solid fa-lock" style="color: #4caf50"></i>
-              Password</label
+              ><i class="fa-solid fa-lock" style="color: #92e3a9"></i> Password
+              <span class="required-sign">*</span></label
             >
             <input type="password" id="password" name="password" />
             <!-- password-error -->
@@ -68,8 +69,8 @@
 
           <div class="confirm-pass">
             <label for="confirm-password" aria-required="true"
-              ><i class="fa-solid fa-lock" style="color: #4caf50"></i> Confirm
-              Password</label
+              ><i class="fa-solid fa-lock" style="color: #92e3a9"></i> Confirm
+              Password <span class="required-sign">*</span></label
             >
             <input
               type="password"
@@ -82,42 +83,38 @@
         </div>
         <div class="form-group">
           <label for="dob"
-            ><i class="fa-solid fa-calendar" style="color: #4caf50"></i> Date of
+            ><i class="fa-solid fa-calendar" style="color: #92e3a9"></i> Date of
             Birth</label
           >
           <input type="date" id="dob" name="dob" />
         </div>
         <div class="form-group">
           <label for="gender" aria-required="true"
-            ><i class="fa-solid fa-venus-mars" style="color: #4caf50"></i>
-            Gender</label
+            ><i class="fa-solid fa-venus-mars" style="color: #92e3a9"></i>
+            Gender <span class="required-sign">*</span></label
           >
           <select id="gender" name="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
-          <!-- gender-error -->
-          <p class="gender-error error">Please add your gender</p>
         </div>
 
         <div class="form-group">
           <label for="role" aria-required="true"
-            ><i class="fa-solid fa-circle-info" style="color: #4caf50"></i> What
-            are you signing in as?</label
+            ><i class="fa-solid fa-circle-info" style="color: #92e3a9"></i> What
+            are you signing in as? <span class="required-sign">*</span></label
           >
           <select id="role" name="role">
             <option value="seller">Seller</option>
             <option value="student" selected>Student</option>
           </select>
-          <!-- role-error -->
-          <p class="role-error error">Please add your role</p>
         </div>
 
         <button type="submit" class="btn">Sign Up</button>
         <!-- Will add the link to the login page -->
         <p class="text-center redirect">
           Already have an account?
-          <a href="#">Log in</a>
+          <a href="login.html">Log in</a>
         </p>
       </form>
     </div>

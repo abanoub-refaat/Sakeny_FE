@@ -168,7 +168,7 @@ form {
   width: 100%;
   padding: 10px;
   margin-top: 25px;
-  background-color: #4caf50;
+  background-color: #56ae59;
   color: white;
   border: none;
   border-radius: 15px;
@@ -178,6 +178,7 @@ form {
 
 .container button:hover {
   background-color: #45a049;
+  color: white;
 }
 
 .container .redirect {
@@ -190,4 +191,9 @@ form {
   font-size: 0.8rem;
   display: none;
   margin-bottom: 0;
+}
+
+.required-sign {
+  color: red;
+  font-size: 0.8rem;
 }
